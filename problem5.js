@@ -1,12 +1,13 @@
 function removeDuplicates(arr) {
-  let unique = [];
+  let uniqueArr = [];
 
   for (let num of arr) {
-    if (!unique.includes(num)) {
-      unique.push(num);
+    
+    if (!uniqueArr.includes(num)) {
+      uniqueArr.push(num);
     }
   }
-  return unique;
+  return uniqueArr;
 }
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));

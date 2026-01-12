@@ -1,7 +1,7 @@
 function isPalindrome(str) {
-  const cleaned = str.toLowerCase();
-  const reversed = cleaned.split("").reverse().join("");
-  return cleaned === reversed;
+  
+let reversed = str.split("").reverse().join("");
+  return str === reversed;
 }
 console.log(isPalindrome("madam")); 
 console.log(isPalindrome("hello")); 
